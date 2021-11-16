@@ -1,8 +1,8 @@
-function sentencesOfTheDay() {
-  return fetch(
-    'https://axistation.github.io/mainichome-data/content.data.stories/sentences-of-the-day.json'
-  ).then((response) => response.json());
-}
+// function sentencesOfTheDay() {
+//   return fetch(
+//     'https://axistation.github.io/mainichome-data/content.data.stories/sentences-of-the-day.json'
+//   ).then((response) => response.json());
+// }
 
 function train() {
   return fetch(
@@ -27,7 +27,7 @@ function train() {
 //   ).then((response) => response.json());
 
 const contentDataStories = [];
-contentDataStories.push(sentencesOfTheDay);
+// contentDataStories.push(sentencesOfTheDay);
 contentDataStories.push(train);
 
 export default contentDataStories;
