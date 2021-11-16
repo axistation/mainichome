@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 
-import { getContentData } from "./content.data.js";
-import Sentences from "../sentences/sentences.component";
+import { getContentData } from './content.data.js';
+import Sentences from '../sentences/sentences.component';
 
-import "./content.styles.scss";
+import './content.styles.scss';
 
 function Content() {
   const { titleParam } = useParams();
@@ -17,10 +17,10 @@ function Content() {
   }, []);
 
   return (
-    <div className="content">
+    <div className='content'>
       {content
         .filter(({ title }) => {
-          return title.replace(/\s+/g, "-").toLowerCase() === titleParam;
+          return title.replace(/\s+/g, '-').toLowerCase() === titleParam;
         })
         .map(({ id, title, sentences }) => (
           <Sentences key={id} sentences={sentences} title={title} />
