@@ -1,14 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
-import contentData from "./content.data.js";
+import { getContentData } from "./content.data.js";
 import Sentences from "../sentences/sentences.component";
 
 import "./content.styles.scss";
 
 function Content() {
   const { titleParam } = useParams();
-  const [content] = useState(contentData);
+  const [content, setContent] = useState([]);
+
+  useEffect(() => {
+    (async () => {
+      setContent(await getContentData());
+    })();
+  }, []);
 
   return (
     <div className="content">
