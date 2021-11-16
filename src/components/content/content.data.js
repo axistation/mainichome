@@ -1,14 +1,8 @@
 import contentDataStories from "./content.data.stories.js";
 
-const contentData = [];
-
-contentDataStories.forEach(function (func) {
-  func().then((json) => {
-    contentData.push(json);
-  });
-});
-
-export default contentData;
+export const getContentData = () => {
+  return Promise.all(contentDataStories.map((func) => func()));
+};
 
 /* https://github.com/wo-benkyou-shimasu/axistation */
 
