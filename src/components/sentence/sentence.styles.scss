@@ -8,27 +8,27 @@
   padding: 0 4px;
   display: inline-block;
 }
-.morph:hover, .morph:focus {
+.morph:hover,
+.morph:focus {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   border-radius: 6px;
 }
 
 .popover-header {
-  font-size: 1.4em;
-  
+  font-size: 1.2em;
 }
 
 .popover-body {
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-weight: 600;
 }
 
 .kana {
   font-weight: 600;
-  color: rgba(143,0,255, 1);
+  color: rgba(143, 0, 255, 1);
 }
 
 .romaji {
   font-weight: 600;
-  color: rgba(143,0,255, 1);
+  color: rgba(143, 0, 255, 1);
 }
