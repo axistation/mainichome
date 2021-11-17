@@ -4,6 +4,8 @@ import { useParams } from 'react-router-dom';
 import { getContentData } from './content.data.js';
 import Sentences from '../sentences/sentences.component';
 
+import Scroll from '../scroll/scroll.component';
+
 import './content.styles.scss';
 
 function Content() {
@@ -18,6 +20,7 @@ function Content() {
 
   return (
     <div className='content'>
+      <Scroll />
       {content
         .filter(({ title }) => {
           return title.replace(/\s+/g, '-').toLowerCase() === titleParam;
