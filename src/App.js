@@ -10,6 +10,7 @@ export default function App() {
   return (
     <div className='App'>
       <Header />
+
       <Switch>
         <Route exact path='/' component={HomePage} />
         <Route path='/:titleParam' component={Content} />
