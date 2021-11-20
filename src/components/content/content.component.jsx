@@ -23,11 +23,13 @@ function Content() {
   return (
     <div className='content'>
       <div
-        style={{ margin: 0, padding: 0, position: 'fixed', left: 0, top: 57 }}
+        style={{ margin: 0, padding: 0, position: 'fixed', left: 0, top: 55 }}
       >
         <ScrollProgressRead
           target='read-container'
-          barColor='rgba(143, 0, 255, 1)'
+          backgroundColor='#dedede'
+          barColor='#333'
+          height='4px'
         />
       </div>
       <Scroll />

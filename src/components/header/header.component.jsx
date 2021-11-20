@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { GiBookCover } from 'react-icons/gi';
+import { IconContext } from 'react-icons';
 
 import './header.styles.scss';
-import Logo from '../../assets/logo.svg';
 
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
@@ -15,7 +16,9 @@ const Header = () => (
     <Container>
       <Navbar.Brand>
         <Link className='logo-container' to='/'>
-          <img src={Logo} alt='logo' height='24' />
+          <IconContext.Provider value={{ size: '24px' }}>
+            <GiBookCover />
+          </IconContext.Provider>
           <span className='px-2'>mainichōme</span>
         </Link>
       </Navbar.Brand>
