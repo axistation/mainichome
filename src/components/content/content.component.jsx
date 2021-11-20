@@ -23,7 +23,7 @@ function Content() {
   return (
     <div className='content'>
       <div
-        style={{ margin: 0, padding: 0, position: 'fixed', left: 0, top: 55 }}
+        style={{ margin: 0, padding: 0, position: 'fixed', left: 0, top: 56 }}
       >
         <ScrollProgressRead
           target='read-container'
