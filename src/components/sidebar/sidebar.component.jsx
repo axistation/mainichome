@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
+import { GiSpellBook } from 'react-icons/gi';
+import { IconContext } from 'react-icons';
 
-import "./sidebar.styles.scss";
+import './sidebar.styles.scss';
 
-import Stories from "../stories/stories.component";
+import Stories from '../stories/stories.component';
 
-import Button from "react-bootstrap/Button";
-import Offcanvas from "react-bootstrap/Offcanvas";
+import Button from 'react-bootstrap/Button';
+import Offcanvas from 'react-bootstrap/Offcanvas';
 
 function Sidebar() {
   const [show, setShow] = useState(false);
@@ -15,8 +17,11 @@ function Sidebar() {
 
   return (
     <>
-      <div className="d-grid gap-2">
-        <Button size="sm" variant="outline-dark" onClick={handleShow}>
+      <div className='d-grid gap-2'>
+        <Button size='sm' variant='outline-dark' onClick={handleShow}>
+          <IconContext.Provider value={{ size: '24px' }}>
+            <GiSpellBook />{' '}
+          </IconContext.Provider>
           Show Stories
         </Button>
       </div>
