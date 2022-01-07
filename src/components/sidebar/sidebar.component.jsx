@@ -22,7 +22,7 @@ function Sidebar() {
           <IconContext.Provider value={{ size: '24px' }}>
             <GiSpellBook />{' '}
           </IconContext.Provider>
-          Show Stories
+          Stories
         </Button>
       </div>
 
